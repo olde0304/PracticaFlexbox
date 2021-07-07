@@ -4,8 +4,65 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  outline: 3px solid red ;
+}
+
+:root {
+  --paddin-container: 80px 0;
+  --color-primary: #f77062;
+  --color-secondary: #1b998b;
+  --color-bg: #fafafa;
+  -align-title: center;
+  --box-shadow: 0 0 12px rgba(0, 0, 0 0.2);
 }
 
 body {
   font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin: 0 auto;
+  outline: 3px solid red ;
+  padding: var(--paddin-container);
+}
+
+.hero {
+  --paddin-container: 0;
+  height: 100vh;
+  background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+}
+
+.hero__main {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.hero__img{
+    width: 45%;
+    text-align: center;
+    margin:0;
+}
+
+.hero__picture{
+    max-width: 80%;
+}
+
+.hero__texts{
+    width: 45%;
+    color: #fff;
+}
+
+.hero__title{
+    font-size: 4rem;
+}
+
+.hero__copy{
+    font-size: 1.5rem;
+    font-weight: 300;
 }
